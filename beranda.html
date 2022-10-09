@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <title>Masuk | Yahoo Mail</title>
+  </head>
+
+  <body>
+    <main class="dashboard">
+      <div class="navbar">
+        <div class="navbar-brand">
+          <button class="hamburger-icon-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img src="img/logo.png" alt="" />
+        </div>
+      
+        <div class="search">
+          <div class="input-group">
+            <button class="left">
+              <i class="fa-solid fa-magnifying-glass"></i></button
+            ><input type="text" placeholder="Telusuri dalam email" /><button
+              class="right"
+            >
+              <i class="fa-solid fa-arrow-up-wide-short"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="action">
+          <button class="action">
+            <i class="fa-regular fa-circle-question"></i>
+          </button>
+          <button class="action">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <button class="action">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+          <img src="img/profil.png" href="" alt="" class="profile" />
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="aside">
+          <button class="tulis">
+            <i class="fa-solid fa-pencil"></i>
+            <span>Tulis</span>
+          </button>
+
+          <ul>
+            <li class="active">
+              <a href="">
+                <div class="box">
+                  <i class="fa-solid fa-inbox"></i>
+                  <span>Kotak Masuk</span>
+                </div>
+                <div class="notif">13</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="box">
+                  <i class="fa-regular fa-star"></i>
+                  <span>Berbintang</span>
+                </div>
+                <div class="notif">3</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="box">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Ditunda</span>
+                </div>
+                <div class="notif">1</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="box">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Terkirim</span>
+                </div>
+                <div class="notif">10</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="box">
+                  <i class="fa-regular fa-file"></i>
+                  <span>Draf</span>
+                </div>
+                <div class="notif">2</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="box">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <span>Selengkapnya</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="add">
+            <span>Label</span>
+            <button class="add">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="left">
+                  <button class="action">
+                    <input type="checkbox" />
+                  </button>
+
+                  <button class="action">
+                    <i class="fa-solid fa-rotate-right"></i>
+                  </button>
+
+                  <button class="action">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </button>
+                </div>
+
+                <div class="right">
+                  <span>1-22 dari 22</span>
+
+                  <button class="action">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+
+                  <button class="action">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+
+                  <button class="action">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="list-header">
+                <div class="box active">
+                  <i class="fa-solid fa-inbox"></i>
+                  <span>Utama</span>
+                </div>
+
+                <div class="box">
+                  <i class="fa-solid fa-tag"></i>
+                  <span>Promosi</span>
+                  <p class="bagde">10 baru</p>
+                </div>
+
+                <div class="box">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Sosial</span>
+                </div>
+              </div>
+              
+              <ul>
+                <li class="unread">
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Tiktok</span>
+                  </div>
+                    <div class="message">
+                      <p>
+                        [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                        Realtime Database Anda akan segera berakhir ...
+                      </p>
+                    </div>
+                  <div class="date">
+                    <span>1 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Facebook</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>2 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Twitter</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>3 Des</span>
+                  </div>
+                </li>
+                <li class="unread">
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Google</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>4 Des</span>
+                  </div>
+                </li>
+                <li class="unread">
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Instagram</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>5 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Instagram</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>6 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Google</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>7 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Google</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>8 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Tiktok</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>9 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Google</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>10 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Twitter</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>11 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Facebook</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>12 Des</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-star"></i>
+                    <span>Facebook</span>
+                  </div>
+                  <div class="message">
+                    <p>
+                      [Firebase] Akses klien ke 'vuejs-1013e-default-rtdb'
+                      Realtime Database Anda akan segera berakhir ...
+                    </p>
+                  </div>
+                  <div class="date">
+                    <span>13 Des</span>
+                  </div>
+                </li>
+              </ul>
+            
+              <div class="list-footer">
+                <span>
+                  <a href="">Persyaratan</a> ~ <a href="">Privasi</a> ~
+                  <a href="">Kebijakan Program</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

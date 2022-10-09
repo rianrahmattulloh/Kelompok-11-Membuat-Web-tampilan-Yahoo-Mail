@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Registrasi</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt=""/>
+        </div>
+
+        <div class="nav-link">
+          <a href="">Bantuan</a>
+        </div>
+      </div>
+
+      <main class="registrasi">
+        <div class="col-4">
+          <div class="card">
+            <img src="img/yahoo1.png" alt="" />
+
+            <h2>Buat Akun Yahoo</h2>
+
+            <form action="" method="post">
+              <div class="input-group">
+                <label for="nama">
+                  <i class="fa-solid fa-address-card"></i>
+                  Nama Lengkap</label
+                >
+                <input
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  onfocus="hanleInput(this)"
+                  onfocusout="handleOutInput(this, true)"
+                />
+              </div>
+              <div class="input-group">
+                <label for="meial">
+                  <i class="fa-solid fa-envelope"></i>
+                  Email Yahoo Baru</label
+                >
+                <input
+                  type="text"
+                  name="meial"
+                  id="meial"
+                  onfocus="hanleInput(this)"
+                  onfocusout="handleOutInput(this, true)"
+                />
+              </div>
+              <div class="input-group">
+                <label for="password">
+                  <i class="fa-solid fa-lock"></i>
+                  Buat Kata Sandi</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  onfocus="hanleInput(this)"
+                  onfocusout="handleOutInput(this, true)"
+                />
+              </div>
+              <div class="input-group">
+                <label for="lahir">
+                  <i class="fa-solid fa-cake-candles"></i>
+                  Tahun Lahir</label
+                >
+                <input
+                  type="text"
+                  name="lahir"
+                  id="lahir"
+                  onfocus="hanleInput(this)"
+                  onfocusout="handleOutInput(this, true)"
+                />
+              </div>
+
+              <p class="">
+                Dengan mengeklik "Lanjutkan", berarti Anda setuju dengan
+                <a href=""> Ketentuan </a>
+                dan menerima
+                <a href=""> Kebijakan Privasi </a>
+              </p>
+
+              <button class="btn" type="submit" name="Lanjutkan">
+                Lanjutkan
+              </button>
+            </form>
+
+            <p class="masuk">
+              Sudah punya akun?
+              <a href="login.html">Masuk</a>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script>
+    let hanleInput = (e, status = null) => {
+      e.previousElementSibling.classList.add("animate");
+    };
+
+    let handleOutInput = (e) => {
+      if (!e.value) {
+        e.previousElementSibling.classList.remove("animate");
+      }
+    };
+  </script>
+</html>

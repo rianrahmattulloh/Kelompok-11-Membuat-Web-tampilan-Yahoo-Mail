@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.container-fluid {
+  background: #f6f8fc;
+  min-height: 100vh;
+}
+
+.container-fluid .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 85px;
+  background: #fff;
+  padding: 0 2.7rem;
+  margin-bottom: 10px;
+}
+
+.container-fluid .navbar .logo {
+  width: 120px;
+}
+
+.container-fluid .navbar .logo img {
+  width: 100%;
+}
+
+.container-fluid .navbar .nav-link a {
+  text-decoration: none;
+  color: #188fff;
+  font-size: 0.9rem;
+}
+
+.container-fluid main {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.container-fluid main .col-6 {
+  width: 65%;
+  padding-top: 4rem;
+}
+
+.container-fluid main .col-6 h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+.container-fluid main .col-6 p {
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+.container-fluid main .col-4 {
+  width: 35%;
+}
+
+.container-fluid main .col-4 .card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px rgba(182, 182, 182, 0.5);
+          box-shadow: 0 0 5px rgba(182, 182, 182, 0.5);
+}
+
+.container-fluid main .col-4 .card img {
+  width: 80px;
+  margin-bottom: 3rem;
+}
+
+.container-fluid main .col-4 .card h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.container-fluid main .col-4 .card p {
+  margin-bottom: 3.5rem;
+}
+
+.container-fluid main .col-4 .card .input-group {
+  text-align: left;
+}
+
+.container-fluid main .col-4 .card .input-group label {
+  color: #b6b6b6;
+  font-size: 0.9rem;
+  display: inline-block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container-fluid main .col-4 .card .input-group label.animate {
+  color: #000;
+  -webkit-transform: translateY(0) scale(0.8) translateX(-25px);
+          transform: translateY(0) scale(0.8) translateX(-25px);
+}
+
+.container-fluid main .col-4 .card .input-group input {
+  border: none;
+  border-bottom: 1px solid #b6b6b6;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container-fluid main .col-4 .card .input-group input:focus {
+  outline: none;
+}
+
+.container-fluid main .col-4 .card .btn {
+  width: 100%;
+  display: block;
+  padding: 0.7rem 0;
+  border-radius: 25px;
+  border: 1px solid #188fff;
+  background: #188fff;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.container-fluid main .col-4 .card .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #188fff;
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+}
+
+.container-fluid main .col-4 .card .checkbox a {
+  text-decoration: none;
+}
+
+.container-fluid main .col-4 .card a.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #188fff;
+}
+
+.container-fluid main.registrasi {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.container-fluid main.registrasi .col-4 .card form .input-group label {
+  color: #000;
+}
+
+.container-fluid main.registrasi .col-4 .card form .input-group label i {
+  margin-right: .5rem;
+}
+
+.container-fluid main.registrasi .col-4 .card form .input-group label.animate {
+  -webkit-transform: translateY(0) scale(0.8) translateX(-13px);
+          transform: translateY(0) scale(0.8) translateX(-13px);
+}
+
+.container-fluid main.registrasi .col-4 .card form .input-group label.animate i {
+  display: none;
+}
+
+.container-fluid main.registrasi .col-4 img {
+  margin-bottom: 1rem;
+}
+
+.container-fluid main.registrasi .col-4 h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.container-fluid main.registrasi .col-4 p {
+  font-size: .8rem;
+  color: #6e7780;
+  margin-bottom: 1rem;
+}
+
+.container-fluid main.registrasi .col-4 p a {
+  color: #188fff;
+  text-decoration: none;
+}
+
+.container-fluid main.registrasi .col-4 p.masuk {
+  margin-top: 2rem;
+  color: #26282a;
+}
+
+@media screen and (max-width: 576px) {
+  .container-fluid .navbar {
+    margin-bottom: 0;
+  }
+  .container-fluid main {
+    width: 100%;
+  }
+  .container-fluid main .col-4 {
+    width: 100%;
+  }
+  .container-fluid main .col-6 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

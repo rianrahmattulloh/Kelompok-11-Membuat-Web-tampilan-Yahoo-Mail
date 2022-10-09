@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Login | Yahoo Mail</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+
+      <div class="nav-link">
+        <a href="">Bantuan</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="col-6">
+        <h1>
+          Silahkan Masuk Ke Akun Yahoo Mail Anda !
+        </h1>
+        <p>
+          Yahoo Mail adalah sebuah penyedia surat elektronik (webmail) dari Yahoo !
+          Ia merupakan penyedia surat elektronik terbesar di Internet, dengan jutaan pengguna.
+          Penyaing utama Yahoo! Mail ialah Windows Live Hotmail, Gmail dan AOL Mail.
+        </p>
+        
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <img src="img/profil.png" alt="" width="50px" height="75px"  />
+
+          <h1>Login Yahoo Mail</h1>
+          <p>Masukkan Nama, Email, No.telepon</p>
+
+          <form action="password.html" method="get">
+            <div class="input-group">
+              <label for="username">Nama pengguna</label>
+              <input type="text" name="username" id="username" onfocus="hanleInput(this)"
+                onfocusout="hanleInput(this, true)" onkeyup="handleInputValue(this)" />
+            </div>
+
+            <button class="btn" type="submit" name="berikutnya">
+              Berikutnya
+            </button>
+            <div class="checkbox">
+              <div class="div">
+                <a href="">
+                <input type="checkbox" id="ingat" />
+                <label for="ingat">Tetap sign in</label>
+                </a>
+              </div>
+
+                <a href="">Lupa nama pengguna?</a>   
+            </div>
+          </form>
+
+          <a href="registrasi.html" class="btn">Buat Akun</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+<script>
+  const label = document.querySelector("label");
+  let value = false;
+
+  let handleInputValue = (e) => {
+    if (e.value) {
+      value = true;
+    } else {
+      value = false;
+    }
+  };
+
+  let hanleInput = (e, status = null) => {
+    label.classList.add("animate");
+
+    if (status && !value) {
+      label.classList.remove("animate");
+    }
+  };
+</script>
+
+</html>

@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+main.dashboard {
+  background: #f6f8fc;
+  height: 100vh;
+}
+
+main.dashboard .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.dashboard .navbar .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  padding-left: 10px;
+}
+
+main.dashboard .navbar .navbar-brand button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main.dashboard .navbar .navbar-brand button i {
+  font-size: 1.1rem;
+}
+
+main.dashboard .navbar .navbar-brand img {
+  width: 100px;
+}
+
+main.dashboard .navbar .search {
+  width: 70%;
+}
+
+main.dashboard .navbar .search .input-group {
+  width: 100%;
+}
+
+main.dashboard .navbar .search .input-group button.left {
+  border-radius: 10px 0 0px 10px;
+}
+
+main.dashboard .navbar .search .input-group button.right {
+  border-radius: 0px 10px 10px 00px;
+}
+
+main.dashboard .navbar .search .input-group button {
+  border: none;
+  background: #eaf1fb;
+  width: 50px;
+  height: 50px;
+}
+
+main.dashboard .navbar .search .input-group button i {
+  font-size: 1.1rem;
+}
+
+main.dashboard .navbar .search .input-group input {
+  height: 50px;
+  background: #eaf1fb;
+  font-size: 1rem;
+  margin: 0;
+  border: none;
+  width: 700px;
+}
+
+main.dashboard .navbar .search .input-group input:focus {
+  outline: none;
+}
+
+main.dashboard .navbar div.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+main.dashboard .navbar div.action button.action {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  background: none;
+}
+
+main.dashboard .navbar div.action button.action i {
+  font-size: 1.1rem;
+}
+
+main.dashboard .navbar div.action button:hover {
+  background: #eaeaea;
+}
+
+main.dashboard .navbar div.action img {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+main.dashboard .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main.dashboard .container-fluid .aside {
+  width: 20%;
+}
+
+main.dashboard .container-fluid .aside button.tulis {
+  width: 125px;
+  margin-left: 10px;
+  background: #c2e7ff;
+  border-radius: 20px;
+  border: none;
+  padding: 1.2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+main.dashboard .container-fluid .aside button.tulis i {
+  font-size: 1.05rem;
+  margin-right: 15px;
+  -webkit-transform: translateX(13px);
+          transform: translateX(13px);
+}
+
+main.dashboard .container-fluid .aside button.tulis span {
+  display: block;
+  font-size: 1.05rem;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+main.dashboard .container-fluid .aside ul {
+  padding-right: 30px;
+  margin-bottom: 2rem;
+}
+
+main.dashboard .container-fluid .aside ul li.active {
+  background: #d3e3fd;
+}
+
+main.dashboard .container-fluid .aside ul li {
+  padding: 7px 0px 7px 30px;
+  border-radius: 0px 25px 25px 0px;
+}
+
+main.dashboard .container-fluid .aside ul li i {
+  margin-right: 10px;
+}
+
+main.dashboard .container-fluid .aside ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.dashboard .container-fluid .aside ul li a .notif {
+  font-size: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+main.dashboard .container-fluid .aside ul li:hover {
+  background: #eaeaea;
+}
+
+main.dashboard .container-fluid .aside .add {
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.dashboard .container-fluid .aside .add button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+}
+
+main.dashboard .container-fluid .content {
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 20px;
+}
+
+main.dashboard .container-fluid .content .card {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+}
+
+main.dashboard .container-fluid .content .card .card-header {
+  padding: 1rem;
+}
+
+main.dashboard .container-fluid .content .card .card-header .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.dashboard .container-fluid .content .card .card-header .row button.action {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+main.dashboard .container-fluid .content .card .card-header .row button.action:hover {
+  background: #eaeaea;
+}
+
+main.dashboard .container-fluid .content .card .card-header .row .right span {
+  font-size: .8rem;
+  color: #777;
+  margin-right: 1rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body {
+  height: 75vh;
+  overflow: auto;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box {
+  width: 20%;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box span {
+  font-size: .9rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box i {
+  font-size: 0.1 0.07rem;
+  margin-right: 1rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box p.bagde {
+  font-size: .7rem;
+  margin-bottom: 0;
+  background: #0fad0f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1px 3px;
+  margin-left: .5rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box.active {
+  border-bottom: 2px solid #56a3e2;
+  color: #56a3e2;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-header .box:hover {
+  background: #eaeaea;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul {
+  list-style: none;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9rem;
+  padding: 10px 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li .title {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li .message {
+  width: 65%;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li .date {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li.unread {
+  background: #f2f6fc;
+}
+
+main.dashboard .container-fluid .content .card .card-body ul li:hover {
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-footer span {
+  font-size: .7rem;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-footer span a {
+  color: #777;
+  text-decoration: none;
+}
+
+main.dashboard .container-fluid .content .card .card-body .list-footer span a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=dashboard.css.map */
